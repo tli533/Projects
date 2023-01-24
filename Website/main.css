@@ -1,0 +1,140 @@
+
+.centre {
+    text-align: center;
+}
+
+.img_centre{
+    text-align: center;
+    line-height: 800px;
+    color: white;
+
+    
+}
+
+.centre_div {
+    margin: auto;
+    width: 75%;
+    border: 3px solid green;
+    padding: 50px;
+}
+
+.landingpage {
+    display: block;
+    filter:brightness(40%);
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('landing_img.jpg');
+    height: 800px;
+    width:  100%;
+    
+}
+
+h1 {
+    padding:0;
+    margin:0;
+    
+}
+
+
+body {
+    margin: 0;
+    background: white;
+    font-family: 'monospace', 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+/* -- Navigation bar --*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background:rgb(31, 153, 143);
+    text-align: center;
+    position:fixed;
+    z-index: 999;
+    width: 100%
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.logo:hover {
+    filter:brightness(70%);
+    transition: all ease-in-out 200ms;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+
+    position: relative; 
+    /*important part helps with position abosolute making it absolute 
+    to the browser window. Rather than making is 100% to the list item
+    rather than the browser window*/
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+nav a:hover {
+    color: rgb(0, 217, 255);
+}
+
+nav a::before {
+    content:'';
+    display: block;
+    height:5px;
+    width: 100%;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+
+
+  
+ 
+
+
